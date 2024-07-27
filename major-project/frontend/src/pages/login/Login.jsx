@@ -31,7 +31,7 @@ const Login = () => {
   const registerUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `http://localhost:5006/api/signUp`,
+        `https://mern-food-zeta.vercel.app/api/signUp`,
         currentUser
       );
       const { user, token } = response.data;
@@ -49,7 +49,7 @@ const Login = () => {
   const loginUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `http://localhost:5006/api/loginIn`,
+        `https://mern-food-zeta.vercel.app/api/loginIn`,
         currentUser
       );
       const { user, token } = response.data;
